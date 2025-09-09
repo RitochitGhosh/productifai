@@ -4,9 +4,9 @@ import {
     deleteUserTodoController, 
     getUserTodosController, 
     updateUserTodosController 
-} from "../controllers/todo.controller";
+} from "../controllers/todo.controller.js";
 
-import { authenticateToken } from "../utils/auth";
+import { authenticateToken } from "../utils/auth.js";
 
 const todoRouter = Router();
 

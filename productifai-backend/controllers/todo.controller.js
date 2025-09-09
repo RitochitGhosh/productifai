@@ -1,4 +1,4 @@
-import { prisma } from "../utils/db";
+import { prisma } from "../utils/db.js";
 
 export const getUserTodosController = async (req, res) => {
   try {
