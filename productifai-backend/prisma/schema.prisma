@@ -83,7 +83,7 @@ model Card {
   question  String
   answer    String
   hint      String?
-  difficulty Difficulty @default(MEDIUM)
+  difficulty String @default("Medium")
   reviewCount Int     @default(0)
   lastReviewed DateTime?
   nextReview   DateTime?

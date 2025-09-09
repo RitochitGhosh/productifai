@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import authRouter from './routes/auth.Router.js';
+import cardRouter from './routes/card.Router.js';
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ app.get('/health', (req, res) => {
 });
 
 app.use("/auth", authRouter);
+app.use("/api/revise", cardRouter);
 
 app.listen(PORT, () => {
     console.log(`App listening on: http://localhost:${PORT}`);
